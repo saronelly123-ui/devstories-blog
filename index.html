@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevStories shares practical stories about web development, technology and design.">
+  <title>DevStories — Ideas for curious developers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="DevStories homepage"><span class="brand-mark">D</span><span>DevStories<span class="brand-period">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#articles">Stories</a>
+        <a class="nav-link" href="#topics">Topics</a>
+        <a class="nav-link" href="#about">About</a>
+      </nav>
+      <a class="header-cta" href="#articles">Explore stories <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE CURIOUS DEVELOPER'S JOURNAL</p>
+        <h1 id="hero-title">Ideas worth<br><span>building on.</span></h1>
+        <p class="hero-copy">Fresh perspectives on code, thoughtful design, and the people shaping the web. Learn something new, one story at a time.</p>
+        <a class="button button-dark" href="#articles">Explore the stories <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-dot"></span> Made for curious minds, everywhere.</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract illustration of a developer workspace">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div>
+        <div class="art-window">
+          <div class="window-top"><span></span><span></span><span></span><b>ideas.js</b></div>
+          <div class="code-lines">
+            <p><span class="code-purple">const</span> <span class="code-green">curiosity</span> = <span class="code-orange">true</span>;</p>
+            <p><span class="code-purple">function</span> <span class="code-blue">buildSomething</span>() {</p>
+            <p class="indent"><span class="code-purple">return</span> <span class="code-green">learn</span>() + <span class="code-green">create</span>();</p>
+            <p>}</p>
+            <p class="code-muted">// keep exploring</p>
+            <p><span class="code-blue">buildSomething</span>(); <span class="cursor"></span></p>
+          </div>
+        </div>
+        <div class="art-label label-top"><span class="label-icon">✳</span> Learn by doing</div>
+        <div class="art-label label-bottom"><span class="label-check">✓</span> Small steps. Big ideas.</div>
+        <div class="art-star star-one">✳</div><div class="art-star star-two">✳</div>
+      </div>
+    </section>
+
+    <section class="topic-strip" id="topics" aria-label="Article topics">
+      <span class="topic-label">EXPLORE TOPICS</span>
+      <div class="topic-tabs" role="group" aria-label="Filter stories by topic">
+        <button class="topic-tab active" type="button" data-filter="All">For you</button>
+        <button class="topic-tab" type="button" data-filter="Development">Web development</button>
+        <button class="topic-tab" type="button" data-filter="Design">Design</button>
+        <button class="topic-tab" type="button" data-filter="Technology">Technology</button>
+        <button class="topic-tab" type="button" data-filter="Career">Career</button>
+      </div>
+    </section>
+
+    <section class="stories-section section-wrap" id="articles">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE LATEST THINKING</p><h2>Stories to spark your next idea<span>.</span></h2></div>
+        <p class="section-description">Useful lessons, honest experiences, and fresh ideas from the world of building for the web.</p>
+      </div>
+      <div class="featured-story">
+        <a class="featured-image image-link" href="articles/article.html?id=1" aria-label="Read The beginner's guide to building for the web">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=85" alt="Laptop showing code on a developer's desk" loading="lazy">
+          <span class="image-badge">EDITOR'S PICK</span>
+        </a>
+        <div class="featured-copy">
+          <div class="card-meta"><span class="category-pill development">WEB DEVELOPMENT</span><span>·</span><span>8 min read</span></div>
+          <h3><a href="articles/article.html?id=1">The beginner's guide to building for the web</a></h3>
+          <p>You don't need to know everything to start. Learn how HTML, CSS, and JavaScript work together to turn an idea into a website.</p>
+          <div class="author-row"><img src="https://i.pravatar.cc/80?img=47" alt="" loading="lazy"><div><strong>Nelly Saro</strong><span>Oct 12, 2026</span></div><a class="read-link" href="articles/article.html?id=1" aria-label="Read this story">Read story <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+
+      <div class="stories-header"><h3>More to explore</h3><span id="story-count">6 stories</span></div>
+      <div class="article-grid" id="article-grid">
+        <article class="story-card" data-category="Design">
+          <a class="story-image" href="articles/article.html?id=2"><img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Colorful graphic design work on a desk" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+          <div class="story-body"><div class="card-meta"><span class="category-pill design">DESIGN</span><span>5 min read</span></div><h3><a href="articles/article.html?id=2">Design systems: small rules, better products</a></h3><p>How a few reusable design decisions can make digital products feel consistent and easy to use.</p><div class="tag-row"><span>#UIDesign</span><span>#Workflow</span></div><div class="author-row compact"><img src="https://i.pravatar.cc/80?img=44" alt="" loading="lazy"><div><strong>Amara K.</strong><span>Oct 10, 2026</span></div></div></div>
+        </article>
+        <article class="story-card" data-category="Technology">
+          <a class="story-image" href="articles/article.html?id=3"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Close-up of a computer circuit board" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+          <div class="story-body"><div class="card-meta"><span class="category-pill technology">TECHNOLOGY</span><span>6 min read</span></div><h3><a href="articles/article.html?id=3">The everyday technology behind the apps we love</a></h3><p>A friendly look at the invisible tools that help our favorite apps work smoothly.</p><div class="tag-row"><span>#Tech</span><span>#Explained</span></div><div class="author-row compact"><img src="https://i.pravatar.cc/80?img=12" alt="" loading="lazy"><div><strong>David M.</strong><span>Oct 8, 2026</span></div></div></div>
+        </article>
+        <article class="story-card" data-category="Development">
+          <a class="story-image" href="articles/article.html?id=4"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="Developer writing code on a monitor" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+          <div class="story-body"><div class="card-meta"><span class="category-pill development">WEB DEVELOPMENT</span><span>4 min read</span></div><h3><a href="articles/article.html?id=4">Five habits that make learning to code easier</a></h3><p>Build confidence with small practice sessions, useful notes, and projects that solve real problems.</p><div class="tag-row"><span>#JavaScript</span><span>#Learning</span></div><div class="author-row compact"><img src="https://i.pravatar.cc/80?img=32" alt="" loading="lazy"><div><strong>Eric N.</strong><span>Oct 6, 2026</span></div></div></div>
+        </article>
+        <article class="story-card" data-category="Career">
+          <a class="story-image" href="articles/article.html?id=5"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="A team collaborating around a table" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+          <div class="story-body"><div class="card-meta"><span class="category-pill career">CAREER</span><span>7 min read</span></div><h3><a href="articles/article.html?id=5">Your first tech portfolio: show the process</a></h3><p>Help people understand how you think by explaining the choices behind your projects.</p><div class="tag-row"><span>#Portfolio</span><span>#Career</span></div><div class="author-row compact"><img src="https://i.pravatar.cc/80?img=49" alt="" loading="lazy"><div><strong>Grace U.</strong><span>Oct 4, 2026</span></div></div></div>
+        </article>
+        <article class="story-card" data-category="Design">
+          <a class="story-image" href="articles/article.html?id=6"><img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Laptop with a clean website design" loading="lazy"><span class="image-arrow" aria-hidden="true">↗</span></a>
+          <div class="story-body"><div class="card-meta"><span class="category-pill design">DESIGN</span><span>5 min read</span></div><h3><a href="articles/article.html?id=6">A practical checklist for a more accessible website</a></h3><p>Readable text, keyboard navigation, and clear labels make websites better for everyone.</p><div class="tag-row"><span>#Accessibility</span><span>#UX</span></div><div class="author-row compact"><img src="https://i.pravatar.cc/80?img=5" alt="" loading="lazy"><div><strong>Joan T.</strong><span>Oct 2, 2026</span></div></div></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No stories in this topic yet. Choose another topic.</p>
+    </section>
+
+    <section class="newsletter section-wrap" id="about">
+      <div><p class="eyebrow">A LITTLE INSPIRATION, DELIVERED</p><h2>Stay curious. Keep creating.</h2><p>DevStories is a learning space for people who want to make the web a little better.</p></div>
+      <a class="button button-light" href="#articles">Find your next read <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">D</span><span>DevStories<span class="brand-period">.</span></span></a><p>Ideas, code, and stories for curious developers.</p><div class="footer-bottom"><span>© 2026 DevStories. Made for learners.</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
