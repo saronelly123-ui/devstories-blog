@@ -73,3 +73,18 @@ if (backToTopButton) {
     });
   });
 }
+
+const copyArticleButton = document.querySelector("#copy-article-link");
+const copyLinkMessage = document.querySelector("#copy-link-message");
+
+if (copyArticleButton && copyLinkMessage) {
+  copyArticleButton.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      copyLinkMessage.textContent = "Article link copied successfully!";
+    } catch (error) {
+      copyLinkMessage.textContent =
+        "Copy was unavailable. Please copy the link from your browser address bar.";
+    }
+  });
+}
