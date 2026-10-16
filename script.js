@@ -47,13 +47,21 @@ if (menuToggle && primaryNav) {
     link.addEventListener("click", closeMenu);
   });
 
-  // Close the menu when the Escape key is pressed.
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
+  
+  // Close the menu when clicking outside it.
+  document.addEventListener("click", (event) => {
+    const clickedOutsideMenu =
+      !primaryNav.contains(event.target) &&
+      !menuToggle.contains(event.target);
+
+    if (
+      primaryNav.classList.contains("is-open") &&
+      clickedOutsideMenu
+    ) {
       closeMenu();
     }
   });
-}
+
 
 // ========================================
 // 2. TOPIC / CATEGORY FILTERING
