@@ -8,3 +8,24 @@
 @media(max-width:700px){.site-header{height:68px}.header-inner{padding:0 20px;justify-content:space-between}.brand{font-size:19px}.menu-toggle{display:block;margin-left:auto}.header-cta{display:none}.primary-nav{display:none;position:absolute;top:67px;left:0;right:0;background:var(--paper);padding:15px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 14px 20px #20251f0c;flex-direction:column;align-items:stretch;gap:0}.primary-nav.is-open{display:flex}.nav-link{padding:12px 3px;border-bottom:1px solid var(--line)}.nav-link:last-child{border-bottom:0}.hero{grid-template-columns:1fr;padding:49px 20px 43px;gap:34px}.hero h1{font-size:clamp(47px,12vw,66px)}.hero-copy{font-size:14px}.hero-art{height:280px}.art-window{width:82%}.topic-strip{padding:0 20px 18px;display:block}.topic-label{display:block;margin-bottom:12px}.topic-tabs{margin-right:-20px;padding-right:20px}.topic-tab{padding:8px 13px}.section-wrap{padding-left:20px;padding-right:20px}.stories-section{padding-top:43px;padding-bottom:50px}.section-heading{display:block;margin-bottom:24px}.section-description{margin-top:13px}.featured-story{grid-template-columns:1fr;margin-bottom:38px}.featured-image{min-height:230px;height:230px}.featured-copy{padding:24px 21px}.featured-copy h3{font-size:27px}.article-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.story-image{height:150px}.story-body{padding:15px 13px}.story-body h3{font-size:16px}.story-body>p{font-size:11px}.card-meta{gap:6px}.category-pill{font-size:8px}.newsletter{margin:0 20px 50px;padding:28px 23px;display:block}.newsletter h2{font-size:28px}.newsletter .button{margin-top:20px}.site-footer{padding:27px 20px 18px}.article-page{padding:40px 20px 60px}.article-heading h1{font-size:42px}.article-subtitle{font-size:15px}.article-content{font-size:15px}.article-content h2{font-size:26px}}
 @media(max-width:430px){.article-grid{grid-template-columns:1fr;gap:18px}.story-image{height:205px}.story-body{padding:18px}.story-body h3{font-size:20px}.story-body>p{font-size:12px}.hero-art{height:250px}.art-window{width:87%}.code-lines{font-size:10px;padding:17px}.label-top{left:12px;top:18px}.label-bottom{right:10px;bottom:18px}.section-heading h2{font-size:30px}.footer-bottom{font-size:9px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Accessibility: make keyboard focus easy to see */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Respect visitors who prefer less animation */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
