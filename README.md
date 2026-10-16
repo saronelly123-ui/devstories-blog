@@ -33,7 +33,16 @@ Build and commit features in small steps. Example commit messages:
 12. Add article content switching
 13. Improve accessibility and final spacing
 
-Only make each commit after you have made and tested the corresponding change. This folder is delivered as a starter project; its Git history is not pre-created.
 
-## Deploy with GitHub Pages
-Push this project to a public GitHub repository, then open **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/ (root)`, and save. The site will be available at the Pages URL GitHub provides.
+## Technologies Used
+
+- **HTML5:** Semantic page structure and accessible navigation.
+- **CSS3:** Responsive layouts, typography, colors, and hover effects.
+- **Vanilla JavaScript:** Topic filtering, mobile menu interactions, and article content switching.
+
+## Project Screenshots
+
+Screenshots are available in the `screenshots/` folder:
+
+- `devstories-desktop-1440.png` — desktop layout at 1440px.
+- `devstories-mobile-375.png` — mobile layout at 375px.
